@@ -1,0 +1,13 @@
+[package]
+name = "tundevice"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "tundevice"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.23.4", features = ["extension-module", "abi3-py37"] }
+pnet = "0.35.0"
+tokio = { version = "1", features = ["full"] }
